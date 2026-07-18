@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+sqlalchemy
+psycopg[binary]
+pytest
+httpx
+pypdf
+pillow
+pytesseract
