@@ -14,5 +14,7 @@ class Transaction(Base):
     amount: Mapped[float] = mapped_column(Float, nullable=False)
     transaction_type: Mapped[str] = mapped_column(String(50), nullable=False)
     category: Mapped[str] = mapped_column(String(100), nullable=False)
+    merchant: Mapped[str] = mapped_column(String(100), nullable=False)
+    currency: Mapped[str] = mapped_column(String(100), nullable=False)
     date: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))

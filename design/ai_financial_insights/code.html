@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en" class="light" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d8e3fb",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#d3e4fe",
+                        "outline-variant": "#c5c6cd",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#40000d",
+                        "primary-fixed-dim": "#bcc7de",
+                        "tertiary-container": "#590016",
+                        "primary-container": "#1e293b",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#ff4e69",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary-fixed-dim": "#ffb2b7",
+                        "secondary-container": "#6cf8bb",
+                        "on-secondary-container": "#00714d",
+                        "on-secondary-fixed-variant": "#005236",
+                        "inverse-primary": "#bcc7de",
+                        "secondary-fixed-dim": "#4edea3",
+                        "inverse-surface": "#213145",
+                        "surface-container-low": "#eff4ff",
+                        "on-primary-container": "#8590a6",
+                        "surface-tint": "#545f73",
+                        "secondary": "#006c49",
+                        "tertiary": "#330009",
+                        "surface-bright": "#f8f9ff",
+                        "on-secondary-fixed": "#002113",
+                        "primary": "#091426",
+                        "tertiary-fixed": "#ffdadb",
+                        "error": "#ba1a1a",
+                        "background": "#f8f9ff",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#6ffbbe",
+                        "surface-container": "#e5eeff",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed-variant": "#3c475a",
+                        "on-background": "#0b1c30",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#45474c",
+                        "on-surface": "#0b1c30",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#111c2d",
+                        "on-tertiary-fixed-variant": "#92002a",
+                        "surface-dim": "#cbdbf5",
+                        "inverse-on-surface": "#eaf1ff",
+                        "outline": "#75777d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "24px",
+                        "2xl": "48px",
+                        "gutter": "24px",
+                        "md": "16px",
+                        "3xl": "64px",
+                        "container-max": "1280px",
+                        "xl": "32px",
+                        "xs": "4px",
+                        "base": "4px",
+                        "sm": "8px",
+                        "margin-desktop": "32px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "numeral-md": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "numeral-lg": ["Inter"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "numeral-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "numeral-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col md:flex-row">
+
+    <!-- TopNavBar (Mobile Only) -->
+    <header class="w-full top-0 sticky border-b border-outline-variant bg-background z-40 md:hidden flex justify-between items-center px-margin-mobile py-md">
+        <div class="font-headline-md text-headline-md font-bold text-primary">Personal Finance</div>
+        <div class="flex gap-md">
+            <button class="hover:text-primary transition-colors duration-200">
+                <span class="material-symbols-outlined" data-icon="notifications" data-original-icon="notifications">notifications</span>
+            </button>
+            <button class="hover:text-primary transition-colors duration-200">
+                <span class="material-symbols-outlined" data-icon="settings">settings</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SideNavBar (Desktop) -->
+    <nav class="hidden md:flex flex-col h-screen w-64 fixed left-0 top-0 bg-surface-container-low border-r border-outline-variant p-lg gap-lg z-50">
+        <div class="flex items-center gap-md mb-lg">
+            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">FN</div>
+            <div>
+                <h1 class="font-headline-sm text-headline-sm font-bold text-primary">Personal Finance</h1>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Sophisticated Navigator</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-sm flex-grow font-label-md text-label-md">
+            <a href="#" class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-all rounded-lg">
+                <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                Dashboard
+            </a>
+            <a href="#" class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-all rounded-lg">
+                <span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+                Transactions
+            </a>
+            <a href="#" class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-all rounded-lg">
+                <span class="material-symbols-outlined" data-icon="track_changes">track_changes</span>
+                Budgets
+            </a>
+            <a href="#" class="flex items-center gap-md bg-primary text-on-primary rounded-lg px-md py-sm hover:bg-primary-container transition-all scale-[0.98]">
+                <span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+                AI Insights
+            </a>
+        </div>
+        
+        <button class="mt-auto bg-primary text-on-primary font-label-md text-label-md py-sm rounded-lg hover:bg-primary-container transition-colors flex items-center justify-center gap-sm">
+            <span class="material-symbols-outlined text-sm">qr_code_scanner</span>
+            Scan Receipt
+        </button>
+    </nav>
+
+    <!-- Main Content Canvas -->
+    <main class="flex-1 md:ml-64 p-margin-mobile md:p-margin-desktop max-w-container-max mx-auto w-full pb-32 md:pb-xl">
+        <header class="mb-xl">
+            <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">AI Insights</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-sm">Your financial health and proactive recommendations.</p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+            
+            <!-- Financial Health Score (Bento Main) -->
+            <section class="lg:col-span-8 glass-card shadow-level-1 rounded-xl p-lg flex flex-col md:flex-row items-center gap-lg">
+                <div class="relative w-48 h-48 flex-shrink-0 flex items-center justify-center">
+                    <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#F1F5F9" stroke-width="8"></circle>
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#006c49" stroke-width="8" stroke-dasharray="282.7" stroke-dashoffset="42.4" class="transition-all duration-1000 ease-out"></circle>
+                    </svg>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+                        <span class="font-numeral-lg text-numeral-lg text-secondary">85</span>
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">Excellent</span>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <h2 class="font-headline-md text-headline-md text-primary mb-sm">Financial Health Score</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-md">Your score is up 4 points this month due to consistent savings and reduced discretionary spending.</p>
+                    <div class="flex flex-wrap gap-sm">
+                        <span class="px-sm py-xs bg-secondary-container text-on-secondary-container rounded-full font-label-sm text-label-sm flex items-center gap-xs">
+                            <span class="material-symbols-outlined text-sm">trending_up</span> Savings +12%
+                        </span>
+                        <span class="px-sm py-xs bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm flex items-center gap-xs">
+                            <span class="material-symbols-outlined text-sm">check_circle</span> Bills Paid
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scan Receipt Module -->
+            <section class="lg:col-span-4 glass-card shadow-level-1 rounded-xl p-lg flex flex-col">
+                <h2 class="font-headline-sm text-headline-sm text-primary mb-md flex items-center gap-sm">
+                    <span class="material-symbols-outlined text-primary">document_scanner</span>
+                    Scan Receipt
+                </h2>
+                <div class="flex-1 bg-surface-container-low border border-dashed border-outline rounded-lg flex flex-col items-center justify-center p-md relative overflow-hidden group cursor-pointer hover:bg-surface-container transition-colors">
+                    <span class="material-symbols-outlined text-3xl text-outline mb-sm group-hover:text-primary transition-colors">add_a_photo</span>
+                    <p class="font-label-md text-label-md text-center text-on-surface-variant group-hover:text-primary transition-colors">Tap to scan or upload</p>
+                    <p class="font-label-sm text-label-sm text-outline mt-xs text-center">Auto-extracts vendor, total, and category</p>
+                </div>
+                <button class="mt-md w-full bg-primary text-on-primary font-label-md text-label-md py-sm rounded-lg hover:bg-primary-container transition-colors">
+                    Upload File
+                </button>
+            </section>
+
+            <!-- AI Recommendations Feed -->
+            <section class="lg:col-span-7 glass-card shadow-level-1 rounded-xl p-lg">
+                <h2 class="font-headline-sm text-headline-sm text-primary mb-lg flex items-center gap-sm">
+                    <span class="material-symbols-outlined text-secondary">auto_awesome</span>
+                    Smart Recommendations
+                </h2>
+                <div class="flex flex-col gap-md">
+                    <!-- Rec 1 -->
+                    <div class="flex items-start gap-md p-md rounded-lg border border-surface-variant hover:border-outline-variant transition-colors bg-surface-bright">
+                        <div class="p-sm bg-tertiary-container rounded-full text-on-tertiary-container flex-shrink-0">
+                            <span class="material-symbols-outlined">subscriptions</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-label-md text-label-md text-primary">Unused Subscription Detected</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">You could save ₹1,250/mo. We noticed you haven't used "StreamFlix" in 3 months.</p>
+                        </div>
+                        <button class="text-error font-label-md text-label-md hover:underline">Cancel</button>
+                    </div>
+                    <!-- Rec 2 -->
+                    <div class="flex items-start gap-md p-md rounded-lg border border-surface-variant hover:border-outline-variant transition-colors bg-surface-bright">
+                        <div class="p-sm bg-secondary-container rounded-full text-on-secondary-container flex-shrink-0">
+                            <span class="material-symbols-outlined">account_balance_wallet</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-label-md text-label-md text-primary">Optimize Savings</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">Move ₹40,000 from Checking to High-Yield Savings to earn an extra ₹200 this month.</p>
+                        </div>
+                        <button class="text-secondary font-label-md text-label-md hover:underline">Transfer</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Spending Forecast -->
+            <section class="lg:col-span-5 glass-card shadow-level-1 rounded-xl p-lg">
+                <h2 class="font-headline-sm text-headline-sm text-primary mb-md">Spending Forecast</h2>
+                <div class="h-48 w-full relative">
+                    <!-- Decorative Chart Placeholder -->
+                    <div class="absolute inset-0 flex items-end justify-between px-sm pb-sm border-b border-l border-outline-variant">
+                        <div class="w-1/6 bg-surface-container-highest rounded-t-sm h-[40%] hover:bg-primary-fixed-dim transition-colors"></div>
+                        <div class="w-1/6 bg-surface-container-highest rounded-t-sm h-[60%] hover:bg-primary-fixed-dim transition-colors"></div>
+                        <div class="w-1/6 bg-surface-container-highest rounded-t-sm h-[30%] hover:bg-primary-fixed-dim transition-colors"></div>
+                        <div class="w-1/6 bg-primary rounded-t-sm h-[80%] shadow-md"></div>
+                        <div class="w-1/6 border-2 border-dashed border-outline-variant rounded-t-sm h-[50%] bg-surface-bright"></div>
+                    </div>
+                    <div class="absolute inset-0 flex flex-col justify-between text-label-sm font-label-sm text-outline pb-sm pl-sm opacity-50 pointer-events-none"><span class="">₹1.5L</span><span class="">₹75k</span><span class="">₹0</span></div>
+                </div>
+                <div class="mt-md text-center">
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Projected to finish <strong class="text-secondary font-numeral-md text-numeral-md">₹10,000 under budget</strong> this month.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav class="lg:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-sm shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] bg-surface rounded-t-xl font-label-sm text-label-sm-mobile">
+        <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:bg-surface-variant rounded-xl transition-colors">
+            <span class="material-symbols-outlined" data-icon="home">home</span>
+            Home
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:bg-surface-variant rounded-xl transition-colors">
+            <span class="material-symbols-outlined" data-icon="list_alt">list_alt</span>
+            Activity
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:bg-surface-variant rounded-xl transition-colors">
+            <span class="material-symbols-outlined" data-icon="pie_chart">pie_chart</span>
+            Budgets
+        </a>
+        </nav></body></html>

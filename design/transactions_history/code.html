@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d8e3fb",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#d3e4fe",
+                        "outline-variant": "#c5c6cd",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#40000d",
+                        "primary-fixed-dim": "#bcc7de",
+                        "tertiary-container": "#590016",
+                        "primary-container": "#1e293b",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#ff4e69",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary-fixed-dim": "#ffb2b7",
+                        "secondary-container": "#6cf8bb",
+                        "on-secondary-container": "#00714d",
+                        "on-secondary-fixed-variant": "#005236",
+                        "inverse-primary": "#bcc7de",
+                        "secondary-fixed-dim": "#4edea3",
+                        "inverse-surface": "#213145",
+                        "surface-container-low": "#eff4ff",
+                        "on-primary-container": "#8590a6",
+                        "surface-tint": "#545f73",
+                        "secondary": "#006c49",
+                        "tertiary": "#330009",
+                        "surface-bright": "#f8f9ff",
+                        "on-secondary-fixed": "#002113",
+                        "primary": "#091426",
+                        "tertiary-fixed": "#ffdadb",
+                        "error": "#ba1a1a",
+                        "background": "#f8f9ff",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#6ffbbe",
+                        "surface-container": "#e5eeff",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed-variant": "#3c475a",
+                        "on-background": "#0b1c30",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#45474c",
+                        "on-surface": "#0b1c30",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#111c2d",
+                        "on-tertiary-fixed-variant": "#92002a",
+                        "surface-dim": "#cbdbf5",
+                        "inverse-on-surface": "#eaf1ff",
+                        "outline": "#75777d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "24px",
+                        "2xl": "48px",
+                        "gutter": "24px",
+                        "md": "16px",
+                        "3xl": "64px",
+                        "container-max": "1280px",
+                        "xl": "32px",
+                        "xs": "4px",
+                        "base": "4px",
+                        "sm": "8px",
+                        "margin-desktop": "32px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "numeral-md": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "numeral-lg": ["Inter"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-background text-on-background font-body-md text-body-md min-h-screen flex flex-col md:flex-row">
+
+    <!-- TopNavBar (Mobile) -->
+    <header class="w-full top-0 sticky border-b border-outline-variant bg-background flex justify-between items-center px-margin-mobile py-md md:hidden z-50">
+        <div class="font-headline-md text-headline-md font-bold text-primary">Personal Finance</div>
+        <div class="flex items-center gap-4">
+            <button class="hover:text-primary transition-colors duration-200">
+                <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+            </button>
+            <button class="hover:text-primary transition-colors duration-200">
+                <span class="material-symbols-outlined" data-icon="settings">settings</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SideNavBar (Desktop) -->
+    <nav class="hidden md:flex flex-col h-screen w-64 fixed left-0 top-0 bg-surface-container-low border-r border-outline-variant p-lg gap-lg z-50">
+        <div class="flex items-center gap-3 mb-8">
+            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">F</div>
+            <div>
+                <div class="font-headline-sm text-headline-sm font-bold text-primary">Personal Finance</div>
+                <div class="font-label-sm text-label-sm text-on-surface-variant">Sophisticated Navigator</div>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-2 flex-grow">
+            <a href="#" class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-all rounded-lg font-label-md text-label-md">
+                <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                Dashboard
+            </a>
+            <a href="#" class="flex items-center gap-md bg-primary text-on-primary rounded-lg px-md py-sm scale-[0.98] font-label-md text-label-md">
+                <span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+                Transactions
+            </a>
+            <a href="#" class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-all rounded-lg font-label-md text-label-md">
+                <span class="material-symbols-outlined" data-icon="track_changes">track_changes</span>
+                Budgets
+            </a>
+            <a href="#" class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-all rounded-lg font-label-md text-label-md">
+                <span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+                AI Insights
+            </a>
+        </div>
+
+        <button class="w-full bg-primary text-on-primary font-label-md text-label-md py-3 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 mt-auto">
+            <span class="material-symbols-outlined" data-icon="document_scanner">document_scanner</span>
+            Scan Receipt
+        </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1 md:ml-64 p-margin-mobile md:p-margin-desktop pb-24 md:pb-margin-desktop min-h-screen">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-xl gap-4">
+            <div>
+                <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg font-bold text-primary mb-2">Transactions</h1>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Review and manage your financial activity.</p>
+            </div>
+            
+            <div class="flex items-center gap-3 w-full md:w-auto">
+                <div class="relative flex-1 md:flex-none">
+                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="search">search</span>
+                    <input type="text" placeholder="Search transactions..." class="w-full md:w-64 pl-10 pr-4 py-2 border border-outline-variant rounded-lg focus:border-primary focus:border-2 focus:ring-0 bg-surface font-body-sm text-body-sm">
+                </div>
+                <button class="flex items-center gap-2 px-4 py-2 border border-outline-variant rounded-lg hover:bg-surface-variant transition-colors font-label-md text-label-md">
+                    <span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+                    Filter
+                </button>
+                <button class="flex items-center gap-2 px-4 py-2 bg-primary text-on-primary rounded-lg hover:opacity-90 transition-opacity font-label-md text-label-md">
+                    <span class="material-symbols-outlined" data-icon="download">download</span>
+                    Export
+                </button>
+            </div>
+        </div>
+
+        <!-- Transactions Card -->
+        <div class="bg-surface rounded-xl border border-outline-variant shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05),0_2px_4px_-2px_rgba(0,0,0,0.05)] overflow-hidden">
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-surface-container-low border-b border-outline-variant">
+                        <tr>
+                            <th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Date</th>
+                            <th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Description</th>
+                            <th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider hidden sm:table-cell">Category</th>
+                            <th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider hidden md:table-cell">Account</th>
+                            <th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider text-right">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-outline-variant">
+                        <!-- Row 1 -->
+                        <tr class="hover:bg-surface-container-low transition-colors group cursor-pointer">
+                            <td class="py-4 px-4 font-body-sm text-body-sm whitespace-nowrap text-on-surface-variant">Oct 24, 2023</td>
+                            <td class="py-4 px-4">
+                                <div class="font-label-md text-label-md text-primary">Whole Foods Market</div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant sm:hidden">Groceries • Checking</div>
+                            </td>
+                            <td class="py-4 px-4 hidden sm:table-cell">
+                                <div class="inline-flex items-center gap-2 px-2 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+                                    <span class="material-symbols-outlined text-[16px]" data-icon="shopping_cart">shopping_cart</span>
+                                    Groceries
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 hidden md:table-cell font-body-sm text-body-sm text-on-surface-variant">Checking (...4291)</td>
+                            <td class="py-4 px-4 text-right font-numeral-md text-numeral-md text-on-surface">-₹124.50</td>
+                        </tr>
+                        
+                        <!-- Row 2 -->
+                        <tr class="hover:bg-surface-container-low transition-colors group cursor-pointer">
+                            <td class="py-4 px-4 font-body-sm text-body-sm whitespace-nowrap text-on-surface-variant">Oct 23, 2023</td>
+                            <td class="py-4 px-4">
+                                <div class="font-label-md text-label-md text-primary">TechCorp Inc. Salary</div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant sm:hidden">Income • Checking</div>
+                            </td>
+                            <td class="py-4 px-4 hidden sm:table-cell">
+                                <div class="inline-flex items-center gap-2 px-2 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+                                    <span class="material-symbols-outlined text-[16px]" data-icon="payments">payments</span>
+                                    Income
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 hidden md:table-cell font-body-sm text-body-sm text-on-surface-variant">Checking (...4291)</td>
+                            <td class="py-4 px-4 text-right font-numeral-md text-numeral-md text-secondary">+₹4,250.00</td>
+                        </tr>
+
+                        <!-- Row 3 -->
+                        <tr class="hover:bg-surface-container-low transition-colors group cursor-pointer">
+                            <td class="py-4 px-4 font-body-sm text-body-sm whitespace-nowrap text-on-surface-variant">Oct 21, 2023</td>
+                            <td class="py-4 px-4">
+                                <div class="font-label-md text-label-md text-primary">Netflix Subscription</div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant sm:hidden">Entertainment • Credit Card</div>
+                            </td>
+                            <td class="py-4 px-4 hidden sm:table-cell">
+                                <div class="inline-flex items-center gap-2 px-2 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+                                    <span class="material-symbols-outlined text-[16px]" data-icon="movie">movie</span>
+                                    Entertainment
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 hidden md:table-cell font-body-sm text-body-sm text-on-surface-variant">Credit Card (...8823)</td>
+                            <td class="py-4 px-4 text-right font-numeral-md text-numeral-md text-on-surface">-₹15.99</td>
+                        </tr>
+                        
+                         <!-- Row 4 -->
+                         <tr class="hover:bg-surface-container-low transition-colors group cursor-pointer">
+                            <td class="py-4 px-4 font-body-sm text-body-sm whitespace-nowrap text-on-surface-variant">Oct 20, 2023</td>
+                            <td class="py-4 px-4">
+                                <div class="font-label-md text-label-md text-primary">Uber Rides</div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant sm:hidden">Transport • Credit Card</div>
+                            </td>
+                            <td class="py-4 px-4 hidden sm:table-cell">
+                                <div class="inline-flex items-center gap-2 px-2 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+                                    <span class="material-symbols-outlined text-[16px]" data-icon="directions_car">directions_car</span>
+                                    Transport
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 hidden md:table-cell font-body-sm text-body-sm text-on-surface-variant">Credit Card (...8823)</td>
+                            <td class="py-4 px-4 text-right font-numeral-md text-numeral-md text-on-surface">-₹24.30</td>
+                        </tr>
+                        
+                        <!-- Row 5 -->
+                        <tr class="hover:bg-surface-container-low transition-colors group cursor-pointer">
+                            <td class="py-4 px-4 font-body-sm text-body-sm whitespace-nowrap text-on-surface-variant">Oct 18, 2023</td>
+                            <td class="py-4 px-4">
+                                <div class="font-label-md text-label-md text-primary">City Utilities</div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant sm:hidden">Bills • Checking</div>
+                            </td>
+                            <td class="py-4 px-4 hidden sm:table-cell">
+                                <div class="inline-flex items-center gap-2 px-2 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+                                    <span class="material-symbols-outlined text-[16px]" data-icon="bolt">bolt</span>
+                                    Bills
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 hidden md:table-cell font-body-sm text-body-sm text-on-surface-variant">Checking (...4291)</td>
+                            <td class="py-4 px-4 text-right font-numeral-md text-numeral-md text-on-surface">-₹85.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="px-4 py-3 border-t border-outline-variant flex items-center justify-between bg-surface-container-low">
+                <div class="font-body-sm text-body-sm text-on-surface-variant">
+                    Showing <span class="font-medium text-primary">1</span> to <span class="font-medium text-primary">5</span> of <span class="font-medium text-primary">24</span> results
+                </div>
+                <div class="flex gap-2">
+                    <button class="p-2 border border-outline-variant rounded-lg hover:bg-surface-variant disabled:opacity-50" disabled="">
+                        <span class="material-symbols-outlined text-[20px]" data-icon="chevron_left">chevron_left</span>
+                    </button>
+                    <button class="p-2 border border-outline-variant rounded-lg hover:bg-surface-variant">
+                        <span class="material-symbols-outlined text-[20px]" data-icon="chevron_right">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- BottomNavBar (Mobile) -->
+    <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-sm md:hidden shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] bg-surface border-t border-outline-variant rounded-t-xl">
+        <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors">
+            <span class="material-symbols-outlined" data-icon="home">home</span>
+            <span class="font-label-sm text-label-sm-mobile mt-1">Home</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-2xl p-2 scale-95 duration-150">
+            <span class="material-symbols-outlined" data-icon="list_alt" data-weight="fill" style="font-variation-settings: 'FILL' 1;">list_alt</span>
+            <span class="font-label-sm text-label-sm-mobile mt-1 font-semibold">Activity</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors">
+            <span class="material-symbols-outlined" data-icon="pie_chart">pie_chart</span>
+            <span class="font-label-sm text-label-sm-mobile mt-1">Budgets</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors">
+            </a></nav></body></html>
